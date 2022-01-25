@@ -7,16 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'partielAngular';
-}
+  tabStatistique: statistique[
 
-export class StatistiqueComponent {
-  pays: string;
-  nouveauxCas: number
+  ];
 
   constructor() {
-    this.pays = "France";
-    this.nouveauxCas = 353648;
-  }
 
+    let USA = new statistique("Etats-Unis")
+
+
+  }
 }

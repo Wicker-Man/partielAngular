@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-statistique',
@@ -6,9 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./statistique.component.css']
 })
 export class StatistiqueComponent implements OnInit {
+  @Input() s!: statistique;
+
+  constructor() {
+    this.s = new statistique;
 
 
-  constructor() { }
+
+
+
+  }
+
+
 
   ngOnInit(): void {
   }
